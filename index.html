@@ -3,7 +3,6 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <link rel="icon" type="image/x-icon" href="https://videy.co/favicon.ico" />
   <title>Play List Video</title>
   <style>
     * {
@@ -73,15 +72,19 @@
   <div class="container">
     <h1>Click Link to Watch</h1>
 
-    <a href="https://video5.vidsy.site/" id="video-link" class="download-btn">
-      
-    </a>
-
-    <!-- Tombol GIF -->
-    <a href="https://commandsister.com/dii28d7cuw?key=3b96fa2b939b689c32ab2e5d1fed2c3b" class="gif-btn">
-      <img src="https://cdn.storageimagedisplay.com/349/34c/ec9/320x50_2_iam18.gif" alt="Iklan GIF">
-    </a>
+    <a id="video-link" class="download-btn"></a>
+    <script>
+      atOptions = {
+        'key' : '795ea17fd712c54274f94240a2ee1152',
+        'format' : 'iframe',
+        'height' : 50,
+        'width' : 320,
+        'params' : {}
+      };
+    </script>
+    <script src="https://commandsister.com/795ea17fd712c54274f94240a2ee1152/invoke.js"></script>
   </div>
+
 
   <script>
     const urlParams = new URLSearchParams(window.location.search);
@@ -91,21 +94,9 @@
 
     if (videoId) {
       videoLinkElement.href = `https://cdn.vidsy.site/${videoId}.mp4`;
-      videoLinkElement.textContent = `https://cdn.videy.co/${videoId}.mp4`;
+      videoLinkElement.textContent = `https://cdn.vidsy.site/${videoId}.mp4`;
     }
   </script>
 
 </body>
 </html>
-   <!-- Histats.com  START  (aync)-->
-<script type="text/javascript">var _Hasync= _Hasync|| [];
-_Hasync.push(['Histats.start', '1,5009868,4,0,0,0,00010000']);
-_Hasync.push(['Histats.fasi', '1']);
-_Hasync.push(['Histats.track_hits', '']);
-(function() {
-var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
-hs.src = ('//s10.histats.com/js15_as.js');
-(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
-})();</script>
-<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?5009868&101" alt="" border="0"></a></noscript>
-<!-- Histats.com  END  -->
